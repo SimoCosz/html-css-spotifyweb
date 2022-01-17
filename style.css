@@ -4,10 +4,45 @@
   box-sizing: border-box;
 }
 
-li{
+ul{
   list-style: none;
 }
 
 img{
   max-width: 100%;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.side-bar{
+  min-width: 230px;
+  min-height: auto;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.main__content{
+  min-width: calc(100vw - 230px);
+  min-height: auto;
+  background-color: #141923;
+  overflow: hidden;
+}
+
+.tool-bar-foot{
+  min-width: 100vw;
+  min-height: 50px;
+  background-color: #282828;
+  position: fixed;
+  bottom: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.song-info ul{
+  display: contents;
 }
