@@ -41,8 +41,42 @@ main{
   z-index: 99999;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .song-info ul{
   display: contents;
+}
+
+.song-info{
+  width: 230px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: #858585;
+
+}
+
+.song{
+  width: 150px;
+}
+
+.song .cover{
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.song .info{
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info h5{
+  color: white;
+}
+
+.info p{
+  font-size: 10px
 }
