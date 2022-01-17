@@ -161,6 +161,8 @@ main{
   align-items: center;
   gap: 20px;
   color: white;
+  width: 100%;
+  max-width: 230px;
 }
 
 .action li:nth-child(3){
@@ -170,9 +172,9 @@ main{
 .volume-tot{
   display: inline-block;
   vertical-align: middle;
-  min-width: 70px;
+  width: 100%;
+  flex-grow: 1;
   min-height: 5px;
-  max-width: 100px;
   border-radius: 3px;
   background-color: #5A5A5A;
 }
@@ -196,14 +198,10 @@ main{
   opacity: 0;
 }
 
-.action li:nth-child(3){
-  display: inline-block;
-}
-
-.action li:nth-child(3):hover .volume-on{
+.action:hover .volume-on{
   background-color: lime;
 }
 
-.action li:nth-child(3):hover .volume-cursor{
+.action:hover .volume-cursor{
   opacity: 1;
 }
