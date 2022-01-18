@@ -52,7 +52,7 @@ main{
 }
 
 .song-info{
-  width: 230px;
+  min-width: 230px;
   padding: 10px;
   display: flex;
   align-items: center;
