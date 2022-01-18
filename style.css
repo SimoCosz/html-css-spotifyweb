@@ -99,6 +99,13 @@ img{
   align-items: center;
   gap: 5px;
   height: 30px;
+  cursor: pointer;
+}
+
+.add-playlist:hover{
+  color: white;
+  border-left: 2px solid lime;
+  padding-left: 10px;
 }
 
 .add{
@@ -112,6 +119,7 @@ img{
   align-items: center;
   gap: 10px;
   margin: 10px 0;
+  cursor: pointer;
 }
 
 .download{
@@ -127,6 +135,7 @@ img{
 
 .profile{
   color: white;
+  padding: 5px;
 }
 
 .svg-icon-profile{
@@ -135,6 +144,15 @@ img{
   background-color: #808080;
   line-height: 10px;
   border-radius: 50%;
+}
+
+.download:hover{
+  color: white;
+}
+
+.profile:hover{
+  background-color: rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
 }
 
 .main__content{
@@ -179,15 +197,18 @@ img{
   display: flex;
   align-items: center;
   color: #858585;
-
 }
 
 .song{
   width: 150px;
+  padding: 5px;
 }
 
+.song:hover{
+  background-color: rgba(250, 250, 250, 0.1);
+}
 .song .cover{
-  width: 50px;
+  width: 45px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -206,6 +227,14 @@ img{
   font-size: 10px
 }
 
+.favorite i{
+  padding: 4px;
+}
+
+.favorite i:hover{
+  color: white;
+}
+
 .control-commands{
   display: flex;
   flex-direction: column;
@@ -216,6 +245,7 @@ img{
 
 .commands ul{
   display: contents;
+  cursor: pointer;
 }
 
 .commands{
@@ -241,6 +271,7 @@ img{
   gap: 20px;
   color: white;
   font-size: 10px;
+  cursor: pointer;
 }
 
 .line-tot{
@@ -279,6 +310,7 @@ img{
 
 .action ul{
   display: contents;
+  cursor: pointer;
 }
 
 .action{
@@ -293,6 +325,10 @@ img{
 
 .action li:nth-child(3){
   display: inline-block;
+}
+
+.action li:hover{
+  color: lime;
 }
 
 .volume-tot{
