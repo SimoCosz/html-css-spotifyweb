@@ -47,29 +47,31 @@ img{
   justify-content: center;
   margin-top: 15px;
   gap: 8px;
+  font-size: 30px;
 }
 
 .svg-icon{
   width: 20px;
-  line-height: 10px;
-}
-
-.side-bar li:hover, li.active{
-  color: white;
-  border-left: 2px solid lime;
-  padding-left: 10px;
+  line-height: 20px;
 }
 
 .side-bar li{
   display: flex;
   gap: 10px;
-  font-size: 20px;
-  align-items: center;
   cursor: pointer;
+  padding-left: 10px;
+}
+
+.side-bar li:hover{
+  color: white;
+}
+
+li.active{
+  border-left: 2px solid lime;
 }
 
 .side-bar li>h5{
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .playlist{
@@ -85,12 +87,13 @@ img{
 }
 
 .playlist li{
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #playlist-title{
   text-transform: uppercase;
   margin-top: 15px;
+  padding-left: 10px;
   color: white;
 }
 
@@ -100,18 +103,16 @@ img{
   gap: 5px;
   height: 30px;
   cursor: pointer;
+  padding-left: 10px;
 }
 
 .add-playlist:hover{
   color: white;
-  border-left: 2px solid lime;
-  padding-left: 10px;
 }
 
 .add{
   font-size: 30px;
   color: #A3A3A3;
-
 }
 
 .download, .profile{
@@ -123,14 +124,14 @@ img{
 }
 
 .download{
-  font-size: 10px;
+  font-size: 12px;
   border-bottom: 1px solid #808080;
   padding-bottom: 10px;
 }
 
 .svg-icon-download{
-  width: 10px;
-  line-height: 10px;
+  width: 12px;
+  line-height: 12px;
 }
 
 .profile{
@@ -155,6 +156,8 @@ img{
   border-radius: 20px;
 }
 
+/* MAIN-CONTENT */
+
 .main__content{
   position: relative;
   flex-grow: 1;
@@ -163,13 +166,73 @@ img{
   padding-top: 120px;
 }
 
+.navbar-main{
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #7E8084;
+}
+
+.navbar-main ul{
+  display: contents;
+}
+
+
+.album-container{
+  padding-left: 20px;
+}
+
+.album-container h2{
+  margin: 20px 0;
+}
+
+.album-container h3{
+  margin-top: 30px;
+}
+
+.album-container p{
+  margin: 5px 0 20px 0;
+  color: #858585;
+  font-weight: bold;
+}
+
+.album-wrapper{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.start{
+  justify-content: flex-start;
+}
+
+.album{
+  width: 180px;
+  min-height: 240px;
+  text-align: center;
+}
+
+.circle img{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* BANNER */
+
 .upgrade-banner{
   min-height: 90px;
   background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  z-index: 9999;
+  width: calc(100% - 230px);
 }
 
 /* TOOL-BAR */
@@ -253,6 +316,7 @@ img{
   align-items: center;
   justify-content: center;
   gap: 20px;
+  max-width: 100%;
   color: white;
 }
 
@@ -301,11 +365,11 @@ img{
   top: -2px;
   right: -5px;
   background-color: white;
-  opacity: 0;
+  display: none;
 }
 
 .time-line:hover .dot-cursor{
-  opacity: 1;
+  display: block;
 }
 
 .action ul{
