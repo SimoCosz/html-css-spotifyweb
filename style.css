@@ -9,12 +9,18 @@ ul{
   list-style: none;
 }
 
-img{
-  max-width: 100%;
-}
-
 .ghost{
   display: contents;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+  display: contents;
+}
+
+img{
+  max-width: 100%;
 }
 
 .main-wrapper{
@@ -59,7 +65,6 @@ img{
 .widget li{
   display: flex;
   gap: 10px;
-  cursor: pointer;
   padding-left: 10px;
 }
 
@@ -78,7 +83,6 @@ li.active{
 .playlist{
   flex-grow: 1;
   overflow-y: auto;
-  cursor: pointer;
 }
 
 .name-playlist li{
@@ -99,7 +103,6 @@ li.active{
   align-items: center;
   gap: 5px;
   height: 30px;
-  cursor: pointer;
   padding-left: 10px;
 }
 
@@ -117,7 +120,6 @@ li.active{
   align-items: center;
   gap: 10px;
   margin: 10px 0;
-  cursor: pointer;
 }
 
 .download{
@@ -181,7 +183,7 @@ li.active{
 }
 
 .album-container{
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 .album-container h2{
@@ -201,7 +203,7 @@ li.active{
 .album-wrapper{
   display: flex;
   justify-content: space-around;
-  gap: 20px;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
@@ -212,7 +214,6 @@ li.active{
 .album{
   width: 180px;
   text-align: center;
-  cursor: pointer;
 }
 
 .image-album{
@@ -255,6 +256,7 @@ li.active{
 /* BANNER */
 
 .upgrade-banner{
+  position: relative;
   min-height: 90px;
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -262,6 +264,17 @@ li.active{
   right: 0;
   z-index: 9999;
   width: calc(100% - 230px);
+}
+
+.go-upgrade{
+  position: absolute;
+  top: 22px;
+  right: 0;
+  background-color: black;
+  border-radius: 99999px;
+  border: 2px solid white;
+  padding: 5px 30px;
+  margin-right: 10px;
 }
 
 /* TOOL-BAR */
@@ -285,7 +298,6 @@ li.active{
   display: flex;
   align-items: center;
   color: #858585;
-  cursor: pointer;
 }
 
 .song{
@@ -343,7 +355,7 @@ li.active{
   cursor: pointer;
 }
 
-.commands li:nth-child(3){
+.play-icon{
   font-size: 30px;
 }
 
