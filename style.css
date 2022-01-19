@@ -203,7 +203,7 @@ li.active{
 .album-wrapper{
   display: flex;
   justify-content: space-around;
-  gap: 5px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -270,11 +270,14 @@ li.active{
   position: absolute;
   top: 22px;
   right: 0;
-  background-color: black;
   border-radius: 99999px;
   border: 2px solid white;
   padding: 5px 30px;
   margin-right: 10px;
+}
+
+.go-upgrade:hover{
+  text-decoration: underline;
 }
 
 /* TOOL-BAR */
@@ -327,6 +330,11 @@ li.active{
 
 .info p{
   font-size: 10px
+}
+
+.info p:hover{
+  text-decoration: underline;
+  color: white;
 }
 
 .favorite i{
