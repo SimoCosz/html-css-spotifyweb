@@ -13,6 +13,10 @@ img{
   max-width: 100%;
 }
 
+.ghost{
+  display: contents;
+}
+
 .main-wrapper{
   width: 100vw;
   height: calc(100vh - 90px);
@@ -31,10 +35,6 @@ img{
   padding: 20px 0 5px 20px;
   color: #858585;
   overflow: hidden;
-}
-
-.side-bar ul{
-  display: contents;
 }
 
 .logo{
@@ -75,14 +75,10 @@ li.active{
   font-size: 12px;
 }
 
-.name-playlist ul{
-  display: contents;
-}
-
 .playlist{
   flex-grow: 1;
   overflow-y: auto;
-
+  cursor: pointer;
 }
 
 .name-playlist li{
@@ -180,10 +176,9 @@ li.active{
   color: #7E8084;
 }
 
-.navbar-main ul{
-  display: contents;
+.navbar-main li:hover{
+  color: white;
 }
-
 
 .album-container{
   padding-left: 20px;
@@ -216,11 +211,43 @@ li.active{
 
 .album{
   width: 180px;
-  min-height: 240px;
   text-align: center;
+  cursor: pointer;
 }
 
-.circle img{
+.image-album{
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.hover-play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.hover-play i{
+  min-width: 100%;
+  min-height: 100%;
+  padding: 55px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 70px;
+  display: none;
+}
+
+.album:hover .hover-play i{
+  display: block;
+  color: white;
+  overflow: hidden;
+}
+
+.circle{
   border-radius: 50%;
   overflow: hidden;
 }
@@ -252,21 +279,19 @@ li.active{
   align-items: center;
 }
 
-.song-info ul{
-  display: contents;
-}
-
 .song-info{
   min-width: 230px;
   padding: 10px;
   display: flex;
   align-items: center;
   color: #858585;
+  cursor: pointer;
 }
 
 .song{
   width: 150px;
   padding: 5px;
+  
 }
 
 .song:hover{
@@ -308,11 +333,6 @@ li.active{
   max-width: 400px;
 }
 
-.commands ul{
-  display: contents;
-  cursor: pointer;
-}
-
 .commands{
   display: flex;
   align-items: center;
@@ -320,6 +340,7 @@ li.active{
   gap: 20px;
   max-width: 100%;
   color: white;
+  cursor: pointer;
 }
 
 .commands li:nth-child(3){
@@ -374,11 +395,6 @@ li.active{
   display: block;
 }
 
-.action ul{
-  display: contents;
-  cursor: pointer;
-}
-
 .action{
   padding: 0 10px;
   display: flex;
@@ -387,6 +403,7 @@ li.active{
   color: white;
   width: 100%;
   max-width: 230px;
+  cursor: pointer;
 }
 
 .action li:nth-child(3){
