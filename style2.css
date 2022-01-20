@@ -55,7 +55,7 @@
     width: calc(100% - 50px);
   }
   .song-info{
-    min-width: 50px;
+    min-width: 100px;
   }
   .song-info .info{
     display: none;
@@ -66,5 +66,41 @@
   .volume-tot{
     display: none;
   }
+}
 
+@media screen and (max-width:370px){
+  .go-upgrade{
+    padding: 5px 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: normal;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .navbar-main{
+    justify-content: flex-start;
+  }
+  .album{
+    width: 80%;
+  }
+  .album:nth-of-type(n+2){
+    display: none;
+  }
+  .album-wrapper{
+    justify-content: center;
+  }
+  .album-container h2, .album-container h3, .album-container p{
+    text-align: center;
+  }
+  .fa-random.icon, .fa-redo-alt.icon{
+    display: none;
+  }
+  .action{
+    display: block;
+  }
+  .action .fa-list-ul, .action .fa-desktop{
+    display: none;
+  }
 }

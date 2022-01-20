@@ -388,6 +388,7 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 5px;
   width: 100%;
   max-width: 400px;
 }
@@ -437,6 +438,8 @@ img{
 
 .time-line:hover .line-passed{
   background-color: lime;
+  width: 100%;
+  transition: width 30s linear ;
 }
 
 .dot-cursor{
