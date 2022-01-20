@@ -1,0 +1,43 @@
+@media screen and (max-width:900px) {
+  .album{
+    width: calc(97% / 4);
+  }
+}
+
+@media screen and (max-width:750px){
+  .album{
+    width: calc(99% / 2);
+  }
+}
+
+@media screen and (max-width:590px) {
+  .side-bar{
+    width: 50px;
+    padding: 10px;
+  }
+  .widget{
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+  .widget li{
+    padding: 0;
+  }
+  .logo{
+    display: none;
+  }
+  .logo-mini{
+    display: block;
+  }
+  .side-bar h5, .playlist,.add-playlist{
+    display: none;
+  }
+  .download,.profile{
+    border: none;
+    padding: 0;
+    margin: 8px 0;
+  }
+  .upgrade-banner{
+    width: calc(100% - 50px);
+  }
+
+}
