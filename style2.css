@@ -7,6 +7,16 @@
   }
 }
 
+@media screen and (max-height:580px) {
+  .upgrade-banner{
+    display: none;
+  }
+  .main__content{
+    padding-top: 20px;
+  }
+  
+}
+
 @media screen and (max-width:750px){
   .album{
     width: calc(99% / 2);
