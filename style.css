@@ -183,6 +183,10 @@ img{
   margin-right: 10px;
 }
 
+.go-upgrade:hover{
+  transform: scale(1.15);
+}
+
 /* MAIN-CONTENT */
 
 .main__content{
@@ -313,10 +317,6 @@ img{
 .circle{
   border-radius: 50%;
   overflow: hidden;
-}
-
-.go-upgrade:hover{
-  text-decoration: underline;
 }
 
 /* TOOL-BAR */
