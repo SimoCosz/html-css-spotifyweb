@@ -2,13 +2,18 @@
   .album{
     width: calc(97% / 4);
   }
+  .album:nth-of-type(n+5){
+    display: none;
+  }
 }
 
 @media screen and (max-width:750px){
   .album{
     width: calc(99% / 2);
   }
-}
+  .album:nth-of-type(n+3){
+    display: none;
+  }
 
 @media screen and (max-width:590px) {
   .side-bar{
@@ -38,6 +43,18 @@
   }
   .upgrade-banner{
     width: calc(100% - 50px);
+  }
+  .song-info{
+    min-width: 50px;
+  }
+  .song-info .info{
+    display: none;
+  }
+  .action{
+    width: 150px;
+  }
+  .volume-tot{
+    display: none;
   }
 
 }
