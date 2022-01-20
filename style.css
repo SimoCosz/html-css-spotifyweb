@@ -21,6 +21,7 @@ a{
 
 img{
   max-width: 100%;
+  display: block;
 }
 
 .main-wrapper{
@@ -210,6 +211,19 @@ img{
   margin-top: 30px;
 }
 
+.album--title, .album--description{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.album:hover .album--title,
+.album:hover .album--description{
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}
+
 .album-container p{
   margin: 5px 0 20px 0;
   color: #858585;
@@ -229,12 +243,10 @@ img{
 
 .image-album{
   position: relative;
-  display: flex;
-  align-items: center;
-  z-index: 2;
+  margin-bottom: 20px;
 }
 
-.hover-play{
+.image-album i{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -242,15 +254,24 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-} 
-
-.hover-play i{
-  min-width: 100%;
-  min-height: 100%;
-  padding: 55px;
-  background-color: rgba(0, 0, 0, 0.5);
   font-size: 70px;
+  z-index: 9999;
   display: none;
+}
+
+.album:hover .image-album i{
+  display: block;
+}
+
+.album:hover .image-album::after{
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .album:hover .hover-play i{
